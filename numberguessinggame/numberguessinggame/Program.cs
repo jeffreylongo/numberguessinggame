@@ -16,45 +16,48 @@ namespace numberguessinggame
             int num01 = rnd.Next(1,100);
             var counter = 0;
 
-            //start:
             Console.WriteLine(num01);
-            Console.WriteLine("Guess a number 1 - 100...or else...");
-            //var rawInput = var.TryParse(rawInput, out guess);
-            var rawInput = Console.ReadLine();
-            var number = int.TryParse(rawInput, out guess);
 
-
-            if (guess == num01)
+            while (counter < 5)
             {
-                Console.WriteLine("You got a Bingo!");
-                Console.ReadLine();
+                Console.WriteLine("Guess a number 1 - 100...or else...");
+                //var rawInput = var.TryParse(rawInput, out guess);
+                var rawInput = Console.ReadLine();
+                var number = int.TryParse(rawInput, out guess);
 
-            }
-            else if ( guess > num01)
-            {
-                Console.WriteLine("Too high, ya big dummy! Try again...");
-                Console.ReadLine();
-                counter++;
-                if (counter == 5)
+                if (guess == num01)
                 {
-                    Console.WriteLine("You Lose!");
+                    Console.WriteLine("You got a Bingo!");
+                    Console.ReadLine();
+                    break;
+                }
+                else if (guess > num01)
+                {
+                    Console.WriteLine($"You guessed {guess}. Too high, ya big dummy! Guesses taken: {counter + 1}");
+                    rawInput = Console.ReadLine();
+                    number = int.TryParse(rawInput, out guess);
+                    counter++;
+                    if (counter == 5)
+                    {
+                        Console.WriteLine("You Lose! Dont quit your day job.");
+                    }
+
+                }
+                else if (guess < num01)
+                {
+                    Console.WriteLine($"You guessed {guess}. As Little John would say...Too LOW! Guesses taken: {counter + 1}");
+                    rawInput = Console.ReadLine();
+                    number = int.TryParse(rawInput, out guess);
+                    counter++;
+                    if (counter == 5)
+                    {
+                        Console.WriteLine("You Lose! Dont quit your day job.");
+                    }
                 }
 
             }
-            else if ( guess < num01)
-            {
-                Console.WriteLine("As Little John would say...Too LOW! Try again...");
-                Console.ReadLine();
-                counter++;
-                if (counter == 5)
-                {
-                    Console.WriteLine("You Lose!");
-                }
-            }
-            
-            //Console.WriteLine(num01);
-            //Console.ReadLine();
-            //goto start;
+            Console.WriteLine(counter);
+            Console.ReadLine();
         }
     }
 }

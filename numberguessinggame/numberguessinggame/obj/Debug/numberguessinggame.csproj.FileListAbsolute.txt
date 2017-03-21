@@ -1,0 +1,6 @@
+C:\Users\jefflongo\tiy\week-2\day-2\numberguessinggame\numberguessinggame\numberguessinggame\obj\Debug\numberguessinggame.csprojResolveAssemblyReference.cache
+C:\Users\jefflongo\tiy\week-2\day-2\numberguessinggame\numberguessinggame\numberguessinggame\bin\Debug\numberguessinggame.exe.config
+C:\Users\jefflongo\tiy\week-2\day-2\numberguessinggame\numberguessinggame\numberguessinggame\bin\Debug\numberguessinggame.exe
+C:\Users\jefflongo\tiy\week-2\day-2\numberguessinggame\numberguessinggame\numberguessinggame\bin\Debug\numberguessinggame.pdb
+C:\Users\jefflongo\tiy\week-2\day-2\numberguessinggame\numberguessinggame\numberguessinggame\obj\Debug\numberguessinggame.exe
+C:\Users\jefflongo\tiy\week-2\day-2\numberguessinggame\numberguessinggame\numberguessinggame\obj\Debug\numberguessinggame.pdb
